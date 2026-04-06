@@ -34,7 +34,7 @@ BRAND           = "KILLSTREET"
 FEED_TITLE      = "KILLSTREET Official Shop"
 FEED_LINK       = SHOP_BASE_URL
 FEED_DESC       = "KILLSTREET Official Products - Street Wear & Apparel"
-OUTPUT_PATH     = Path("docs/feed.xml")
+OUTPUT_PATH     = Path("feed.xml")
 
 HEADERS = {
     "User-Agent": (
