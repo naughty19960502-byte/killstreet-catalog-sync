@@ -276,7 +276,11 @@ def main():
     products = []
     for i, pid in enumerate(product_ids, 1):
         print(f"[{i}/{len(product_ids)}] Scraping item {pid}...")
-        product = scrape_product(session, pid)
+        try:
+            product = scrape_product(session, pid)
+        except Exception as e:
+            print(f"  -> SKIP (unexpected error: {e})")
+            continue
         if not product:
             print(f"  -> SKIP (fetch failed)")
             continue
