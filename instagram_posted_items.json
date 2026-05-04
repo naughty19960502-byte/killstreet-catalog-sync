@@ -1,38 +1,9 @@
 {
   "posted_ids": {
-    "137814369": {
-      "source": "manual_seed"
-    },
-    "137849083": {
-      "source": "manual_seed"
-    },
-    "137856068": {
-      "source": "manual_seed"
-    },
-    "137873781": {
-      "source": "manual_seed"
-    },
-    "138177407": {
-      "source": "manual_seed"
-    },
-    "138757915": {
-      "source": "manual_seed"
-    },
-    "139248379": {
-      "source": "manual_seed"
-    },
-    "139600268": {
-      "source": "manual_seed"
-    },
-    "139602922": {
-      "source": "manual_seed"
-    },
-    "139620541": {
-      "source": "manual_seed"
-    },
     "139697607": {
-      "source": "manual_seed"
+      "source": "manual_seed",
+      "note": "Already posted to Instagram before state tracking was added."
     }
   },
-  "updated_at": "2026-05-04T05:57:08.870757+00:00"
+  "updated_at": "2026-05-04T00:00:00+09:00"
 }
