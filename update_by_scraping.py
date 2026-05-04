@@ -34,7 +34,7 @@ BRAND           = "KILLSTREET"
 FEED_TITLE      = "KILLSTREET Official Shop"
 FEED_LINK       = SHOP_BASE_URL
 FEED_DESC       = "KILLSTREET Official Products - Street Wear & Apparel"
-OUTPUT_PATH     = Path("feed.xml")
+OUTPUT_PATH     = Path("docs/feed.xml")
 
 HEADERS = {
     "User-Agent": (
@@ -276,7 +276,11 @@ def main():
     products = []
     for i, pid in enumerate(product_ids, 1):
         print(f"[{i}/{len(product_ids)}] Scraping item {pid}...")
-        product = scrape_product(session, pid)
+        try:
+            product = scrape_product(session, pid)
+        except Exception as e:
+            print(f"  -> SKIP (unexpected error: {e})")
+            continue
         if not product:
             print(f"  -> SKIP (fetch failed)")
             continue
